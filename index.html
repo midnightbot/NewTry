@@ -8,10 +8,174 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
 <!--BOOTSTRAP-->
-<link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 
 <!--    CUSTOM CSS-->
-    <link rel="stylesheet" href="../CSS/Sociofy_Team_Members.css">
+<style>
+    
+    /**********************************************CSS************************************************/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: oldlace;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+img {
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team {
+    margin: 50px 0px;
+}
+
+.title{
+    text-align: center;
+}
+.content-details .light {
+    color: gray;
+}
+
+#team h2::after
+{
+    content: '';
+    background: #000;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.linkedin {
+    background-color: blue;
+    padding: 5px;
+    text-decoration:none;
+    color: #fff;
+    border-radius: 5px;
+}
+.linkedin:hover{
+    background-color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    color: blue;
+    border-radius: 5px;
+}
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 33.33%;
+}
+.container :hover{
+    text-decoration: none;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+      height: auto;
+      
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 70%;
+  max-width: 400px;
+    min-height: 300px;
+    min-width: 400px;
+    max-height: 300px;
+  margin: auto;
+  overflow: hidden;
+    object-fit:cover;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+
+    
+</style>
 </head>
 <body>
     <section id="team">
